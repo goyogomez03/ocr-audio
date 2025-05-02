@@ -59,10 +59,13 @@ st.markdown("""
         background-color: #6a4c9c;
         color: white;
     }
-    .stRadio>label {
+    .stRadio>label, .stSelectbox>label, .stCheckbox>label {
         color: black !important;
     }
-    .stCheckbox>label {
+    .stRadio div {
+        color: black !important;
+    }
+    .stCheckbox div {
         color: black !important;
     }
     .stSelectbox>div>div>input {
