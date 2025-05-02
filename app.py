@@ -60,10 +60,10 @@ st.markdown("""
         color: white;
     }
     .stRadio>label {
-        color: #6a4c9c;
+        color: black !important;
     }
     .stCheckbox>label {
-        color: #6a4c9c;
+        color: black !important;
     }
     .stSelectbox>div>div>input {
         background-color: #ffe6f3;
@@ -96,14 +96,6 @@ else :
 with st.sidebar:
     st.subheader("Procesamiento para Cámara")
     filtro = st.radio("Filtro para imagen con cámara",('Sí', 'No'), key="filtro", index=1)
-    # Cambiar color a morado
-    st.markdown("""
-        <style>
-        .stRadio>label {
-            color: #6a4c9c !important;
-        }
-        </style>
-    """, unsafe_allow_html=True)
 
 # Subir imagen
 bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg"])
@@ -166,7 +158,6 @@ with st.sidebar:
         if display_output_text:
             st.markdown(f"## Texto de salida:")
             st.write(f" {output_text}")
-
 
 
  
