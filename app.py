@@ -83,7 +83,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Título y subtítulo
-st.title("Reconocimiento Óptico de Caracteres", anchor="title")
+st.title("Reconocimiento Óptico de Caracteres🦅", anchor="title")
 st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo", anchor="subheader")
 
 # Checkbox para usar la cámara
